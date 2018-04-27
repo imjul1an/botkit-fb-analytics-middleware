@@ -7,7 +7,6 @@
     "test": "tests"
   },
   "dependencies": {
-    "dashbot": "^9.8.0",
     "request": "^2.85.0"
   },
   "devDependencies": {},
