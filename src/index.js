@@ -2,7 +2,7 @@
 
 const request = require("request");
 
-module.exports = function (config) {
+module.exports = function (config = {}) {
     const { app_id, page_token, page_id, } = config;
 
     if (!app_id) {
