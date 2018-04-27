@@ -1,0 +1,33 @@
+{
+  "name": "botkit-fb-analytics-middleware",
+  "version": "1.0.0",
+  "description": "Facebook analytics middleware for BotKit",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "dashbot": "^9.8.0",
+    "request": "^2.85.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianusti/botkit-fb-analytics-middleware.git"
+  },
+  "keywords": [
+    "botkit",
+    "middleware",
+    "facebook",
+    "analytics"
+  ],
+  "author": "Julian Ustiyanovych",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julianusti/botkit-fb-analytics-middleware/issues"
+  },
+  "homepage": "https://github.com/julianusti/botkit-fb-analytics-middleware#readme"
+}
