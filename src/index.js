@@ -1,9 +1,7 @@
-"use strict";
-
 const request = require("request");
 
-module.exports = function (config = {}) {
-    const { app_id, page_token, page_id, } = config;
+module.exports = function (config) {
+    const { app_id, page_token, page_id, } = config || {};
 
     if (!app_id) {
         console.log('Failed to initialize Botkit-Fb-Analytics-Middleware. "app_id" is missing.');
@@ -80,7 +78,7 @@ const sendEvent = ({
         if (err) {
             console.log(`Error. Failed to send custom event: ${event_name} to Facebook Analytics.`);
         } else {
-            console.log(`Fb analytics custom event ${event_name} has been send. ${body}`);
+            console.log(`Fb analytics custom event ${event_name} has been send. Response: ${body}`);
         }
     });
 }
