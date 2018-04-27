@@ -21,19 +21,19 @@ module.exports = function (config = {}) {
     }
 
     return {
-        // botkit receive middleware endpoint
         receive: (bot, message, next) => {
             sendEventToFbAnalytics(bot, message, config);
             next();
         },
-        // botkit send middleware endpoint
         send: (bot, message, next) => {
             sendEventToFbAnalytics(bot, message, config);
             next();
         },
-        // botkit controller enhencement
+        // BotKit controller enhencement.
         analytics: {
-            send: event_name => sendEvent(Object.assign({}, config, event_name))
+            send: (bot, message) => {
+                sendEventToFbAnalytics(bot, message, config);
+            }
         }
     }
 }
