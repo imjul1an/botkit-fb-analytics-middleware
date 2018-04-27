@@ -1,4 +1,4 @@
-const request = require("request");
+const request = require('request');
 
 module.exports = function (config) {
     const { app_id, page_token, page_id, } = config || {};
