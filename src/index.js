@@ -6,17 +6,17 @@ module.exports = function (config = {}) {
     const { app_id, page_token, page_id, } = config;
 
     if (!app_id) {
-        console.log('Error. Facebook analytics middleware is missing app_id. Provide valid app_id.');
+        console.log('Failed to initialize Botkit-Fb-Analytics-Middleware. "app_id" is missing.');
         return;
     }
 
     if (!page_token) {
-        console.log('Error. Facebook analytics middleware is missing page_token. Provide valid page_token.');
+        console.log('Failed to initialize Botkit-Fb-Analytics-Middleware. "page_token" is missing.');
         return;
     }
 
     if (!page_id) {
-        console.log('Error. Facebook analytics middleware is missing page_id. Provide valid page_id.');
+        console.log('Failed to initialize Botkit-Fb-Analytics-Middleware. "page_id" is missing.');
         return;
     }
 
