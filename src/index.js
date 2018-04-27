@@ -29,7 +29,7 @@ module.exports = function (config = {}) {
             sendEventToFbAnalytics(bot, message, config);
             next();
         },
-        // BotKit controller enhencement.
+        // Enhence BotKit's controller with analytcis object, so you can send custom events explicitly.
         analytics: {
             send: (bot, message) => {
                 sendEventToFbAnalytics(bot, message, config);
