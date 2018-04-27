@@ -7,14 +7,17 @@ module.exports = function (config = {}) {
 
     if (!app_id) {
         console.log('Error. Facebook analytics middleware is missing app_id. Provide valid app_id.');
+        return;
     }
 
     if (!page_token) {
         console.log('Error. Facebook analytics middleware is missing page_token. Provide valid page_token.');
+        return;
     }
 
     if (!page_id) {
         console.log('Error. Facebook analytics middleware is missing page_id. Provide valid page_id.');
+        return;
     }
 
     return {
